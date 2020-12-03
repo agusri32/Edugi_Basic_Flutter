@@ -11,21 +11,254 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Edugi Flutter General Code'),
     );
   }
 }
+
+/* Learning 1 - Counter
+return MaterialApp(
+  title: 'Flutter Demo',
+  theme: ThemeData(
+    primarySwatch: Colors.blue,
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+  ),
+  home: MyHomePage(title: 'Flutter Demo Home Page'),
+);
+*/
+
+/* Learning 2 - Widget Text & Color
+return MaterialApp(
+    title: 'First App',
+    home: Scaffold(
+      backgroundColor: Colors.pinkAccent,
+      appBar: AppBar(
+        title: Text('Aplikasi Flutter Edugi'),
+        backgroundColor: Colors.deepOrange,
+      ),
+      body: Center(
+        child: Text('Selamat Datang di Edugi'),
+      ),
+    ),
+  );
+}
+*/
+
+/* Learning 3 - Layout Basic
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text('Aplikasi Flutter Edugi'),
+      backgroundColor: Colors.deepOrange,
+    ),
+    body: Column(
+      children: <Widget>[
+        Image.network(
+            'https://www.petanikode.com/img/flutter/flutter.png'),
+        Text(
+          'Belajar Flutter untuk Pemula',
+          style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
+        ),
+        Text('Supported by Imtiyaz IT Solution'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Image.network(
+                'https://www.petanikode.com/img/flutter/flutter-sqr.png'),
+            Image.network(
+                'https://www.petanikode.com/img/flutter/flutter-sqr.png'),
+          ],
+        )
+      ],
+    ),
+  ),
+);
+*/
+
+/* Learning 4 - Column
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text("Column"),
+    ),
+    body: Column(
+      children: <Widget>[
+        Container(
+          child: Text("Halo 1 !!!"),
+          color: Colors.lime,
+          padding: EdgeInsets.all(16.0),
+        ),
+        Container(
+          child: Text("Halo 2 !!!"),
+          color: Colors.purple,
+          padding: EdgeInsets.all(16.0),
+        ),
+        Container(
+          child: Text("Halo 3 !!!"),
+          color: Colors.lightBlue,
+          padding: EdgeInsets.all(16.0),
+        ),
+      ],
+    ),
+  ),
+);
+*/
+
+/* Learning 5 - Row
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text("Row"),
+    ),
+    body: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: <Widget>[
+        Container(
+          child: Text("Halo 1 !!!"),
+          color: Colors.lime,
+          padding: EdgeInsets.all(16.0),
+        ),
+        Container(
+          child: Text("Halo 2 !!!"),
+          color: Colors.purple,
+          padding: EdgeInsets.all(16.0),
+        ),
+        Container(
+          child: Text("Halo 3 !!!"),
+          color: Colors.lightBlue,
+          padding: EdgeInsets.all(16.0),
+        ),
+      ],
+    ),
+  ),
+);
+*/
+
+/* Learning 6 - Icon
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text("Icon"),
+    ),
+    body: Container(
+      padding: EdgeInsets.all(16.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Column(
+            children: <Widget>[Icon(Icons.access_alarm), Text('Alarm')],
+          ),
+          Column(
+            children: <Widget>[Icon(Icons.phone), Text('Phone')],
+          ),
+          Column(
+            children: <Widget>[Icon(Icons.book), Text('Book')],
+          ),
+        ],
+      ),
+    ),
+  ),
+);
+*/
+
+/* Learning 7 - Button
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text("Button"),
+    ),
+    body: Column(
+      children: <Widget>[
+        RaisedButton(
+          color: Colors.amber,
+          child: Text("Raised Button"),
+          onPressed: () {},
+        ),
+        MaterialButton(
+          color: Colors.lime,
+          child: Text("Material Button"),
+          onPressed: () {},
+        ),
+        FlatButton(
+          color: Colors.lightGreenAccent,
+          child: Text("FlatButton Button"),
+          onPressed: () {},
+        ),
+      ],
+    ),
+  ),
+);
+*/
+
+/* Learning 8 - Form
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text("Form"),
+    ),
+    body: Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Form(
+        child: Column(
+          children: <Widget>[
+            TextFormField(
+              decoration: InputDecoration(hintText: "Username"),
+            ),
+            TextFormField(
+              obscureText: true,
+              decoration: InputDecoration(hintText: "Password"),
+            ),
+            RaisedButton(
+              child: Text("Login"),
+              onPressed: () {},
+            )
+          ],
+        ),
+      ),
+    ),
+  ),
+);
+*/
+
+/* Learning 9 - ListView
+return MaterialApp(
+  title: 'First App',
+  home: Scaffold(
+    appBar: AppBar(
+      title: Text("ListView"),
+    ),
+    body: ListView(
+      children: <Widget>[
+        ListTile(
+          leading: Icon(Icons.access_alarm),
+          title: Text('Alarm'),
+        ),
+        ListTile(
+          leading: Icon(Icons.phone),
+          title: Text('Phone'),
+        ),
+        ListTile(
+          leading: Icon(Icons.camera),
+          title: Text('Camera'),
+        ),
+        ListTile(
+          leading: Icon(Icons.message),
+          title: Text('Message'),
+        ),
+      ],
+    ),
+  ),
+);
+*/
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);

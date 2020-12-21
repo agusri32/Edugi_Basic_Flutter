@@ -1,3 +1,4 @@
+import 'package:edugi_general_flutter/page_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:edugi_general_flutter/page_login.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       ),
 
       //home: MyHomePage(title: 'Edugi Flutter General Code'),
-      home: LoginUser(),
+      home: PageLayout(),
 
     );
   }

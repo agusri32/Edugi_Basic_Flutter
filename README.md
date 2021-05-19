@@ -1,4 +1,4 @@
-# edugi_basic_flutter
+# Edugi_Basic_Flutter
 
 A new Flutter application for basic code
 

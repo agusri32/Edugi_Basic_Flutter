@@ -1,3 +1,3 @@
-# edugi_general_flutter
+# edugi_basic_flutter
 
-A new Flutter application for general code
+A new Flutter application for basic code

@@ -1,6 +1,6 @@
 import 'package:edugi_general_flutter/page_layout.dart';
 import 'package:flutter/material.dart';
-import 'package:edugi_general_flutter/page_login.dart';
+//import 'package:edugi_general_flutter/page_login.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,12 +14,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 
       //home: MyHomePage(title: 'Edugi Flutter General Code'),
       home: PageLayout(),
-
     );
   }
 }

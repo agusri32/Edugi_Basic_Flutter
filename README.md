@@ -1,1 +1,2 @@
-Untuk databasenya silahkan download via website https://edugi.web.id
+# Edugi_Basic_Flutter
+This is my basic application. "Let's start from basic"
